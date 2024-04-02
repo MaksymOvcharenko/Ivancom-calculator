@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Получить информацию по номеру ТТН</h1>
+      <label for="ttnNumber">Введите номер ТТН:</label>
+      <input type="text" id="ttnNumber" placeholder="Введите номер ТТН" />
+      <button onclick="getStatus()">Получить информацию</button>
+      <div id="result" class="hidden">
+        <h2>Результаты:</h2>
+        <p>Вес документа: <span id="documentWeight"></span></p>
+        <p>Отправитель: <span id="senderFullName"></span></p>
+        <p>Стоимость документа: <span id="documentCost"></span></p>
+        <p>Тип плательщика: <span id="payerType"></span></p>
+        <p>Заявленная стоимость: <span id="announcedPrice"></span></p>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
